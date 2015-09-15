@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Antiblanks :: Animated heart prototype</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="an/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="an/css/style.css" />
+    <noscript>
+      <link rel="stylesheet" type="text/css" href="an/css/fallback.css" />
+    </noscript>
+  </head>
+  <body>
+    <div class="gallery">
+
+
+        <div id="ri-grid" class="ri-grid ri-grid-size-1 ri-shadow">
+          <img class="ri-loading-image" src="an/images/loading.gif"/>
+          <ul>
+            <li><a href="#"><img src="an/images/medium/1.jpg"/></a></li>
+            <li><a href="#"><img src="an/images/medium/2.jpg"/></a></li>
+            <li><a href="#"><img src="an/images/medium/3.jpg"/></a></li>
+            <li><a href="#"><img src="an/images/medium/4.jpg"/></a></li>
+            <li><a href="#"><img src="an/images/medium/5.jpg"/></a></li>
+            <li><a href="#"><img src="an/images/medium/6.jpg"/></a></li>
+            <li><a href="#"><img src="an/images/medium/7.jpg"/></a></li>
+            <li><a href="#"><img src="an/images/medium/8.jpg"/></a></li>
+            <li><a href="#"><img src="an/images/medium/9.jpg"/></a></li>
+            <li><a href="#"><img src="an/images/medium/10.jpg"/></a></li>
+        
+          </ul>
+        </div>       
+        
+
+    </div>
+    <div id="animatedHeart" class="animated-heart">
+      <div class="cards-container">
+        <div class="cards-mask">
+          <svg>
+     
+                <defs>
+                    <mask id="mask" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
+                        <image width="100%" height="100%" xlink:href="http://www.antiblanks.com/static/animatedheart.proto/img/heart-mask-inverted.png"></image>
+                    </mask>
+                </defs>
+         
+                <foreignObject width="100%" height="100%" style="mask: url(#mask);">
+           
+                    <div class="cards">
+                      <img class="cards-image" src="img/po.jpg" />
+                    </div>
+        
+                </foreignObject>
+            </svg>
+        </div>
+      </div>
+      <div style="display: none;">
+        <div class="card-container-template">
+          <div class="card card-1">
+            <div class="front-crop">
+              <div class="front"></div>
+            </div>
+            <div class="back-crop">
+              <div class="back"></div>
+            </div>
+          </div>
+          <div class="card card-2 flip">
+            <div class="front-crop">
+              <div class="front"></div>
+            </div>
+            <div class="back-crop">
+              <div class="back"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+      <!-- Vendor -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="js/heart.js"></script>
+
+  <!-- Application -->
+  <script type="text/javascript" src="js/debug.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="an/js/modernizr.custom.26633.js"></script> 
+  <script type="text/javascript" src="an/js/jquery.gridrotator.js"></script>
+
+</html>
