@@ -24,16 +24,16 @@ export default class DesktopApp extends Component {
 				<div className="gallery">
 			        <div id="ri-grid" className="ri-grid ri-grid-size-1 ri-shadow">
 			          <ul>
-			            <li><a href="#"><img src="img/gallery/1.jpg"/></a></li>
-			            <li><a href="#"><img src="img/gallery/2.jpg"/></a></li>
-			            <li><a href="#"><img src="img/gallery/3.jpg"/></a></li>
-			            <li><a href="#"><img src="img/gallery/4.jpg"/></a></li>
-			            <li><a href="#"><img src="img/gallery/5.jpg"/></a></li>
-			            <li><a href="#"><img src="img/gallery/6.jpg"/></a></li>
-			            <li><a href="#"><img src="img/gallery/7.jpg"/></a></li>
-			            <li><a href="#"><img src="img/gallery/8.jpg"/></a></li>
-			            <li><a href="#"><img src="img/gallery/9.jpg"/></a></li>
-			            <li><a href="#"><img src="img/gallery/10.jpg"/></a></li>
+			            <li><a ><img src="img/gallery/1.jpg"/></a></li>
+			            <li><a ><img src="img/gallery/2.jpg"/></a></li>
+			            <li><a ><img src="img/gallery/3.jpg"/></a></li>
+			            <li><a ><img src="img/gallery/4.jpg"/></a></li>
+			            <li><a ><img src="img/gallery/5.jpg"/></a></li>
+			            <li><a ><img src="img/gallery/6.jpg"/></a></li>
+			            <li><a ><img src="img/gallery/7.jpg"/></a></li>
+			            <li><a ><img src="img/gallery/8.jpg"/></a></li>
+			            <li><a ><img src="img/gallery/9.jpg"/></a></li>
+			            <li><a ><img src="img/gallery/10.jpg"/></a></li>
 			        
 			          </ul>
 			        </div>       
