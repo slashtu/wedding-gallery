@@ -192,7 +192,7 @@
 
 .cards-container .cards-mask .cards {
     overflow: hidden;
-    -webkit-mask-image: url(/img/heart-mask-inverted.png);
+    -webkit-mask-image: url(../../img/heart-mask-inverted.png);
     -webkit-mask-size: 100% 100%;
     position: relative;
 }
