@@ -1,12 +1,23 @@
 import React, { Component, PropTypes } from 'react'
 import DesktopApp from './DesktopApp'
+import MobileApp from './MobileApp'
 
 export default class App extends Component {
 
 	render() {
 
-		return(
-			<DesktopApp />
-		)
+		var width = $(document).width()
+
+		if(width > 1000){
+
+			return(
+				<DesktopApp />
+			)
+
+		}else{
+			return(
+				<MobileApp />
+			)
+		}
 	}
 }
