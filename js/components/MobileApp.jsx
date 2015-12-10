@@ -24,7 +24,7 @@ export default class MobileApp extends Component {
             baseUrl = 'https://farm' + photo.farm + '.static.flickr.com/' +
                 photo.server + '/' + photo.id + '_' + photo.secret;
             $('<a/>')
-                .append($('<img>').prop('src', baseUrl + '_s.jpg'))
+                .append($('<img>').prop('src', baseUrl + '_s.jpg').prop('class', 'small'))
                 .prop('href', baseUrl + '_b.jpg')
                 .prop('title', photo.title)
                 .attr('data-gallery', '')
@@ -34,7 +34,7 @@ export default class MobileApp extends Component {
                 title: photo.title
             });
         });
-        
+
         // // Initialize the Gallery as image carousel:
         // blueimp.Gallery(carouselLinks, {
         //     container: '#blueimp-image-carousel',

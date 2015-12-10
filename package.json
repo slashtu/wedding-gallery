@@ -1,6 +1,6 @@
 {
   "name": "wedding",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "webpack -d --progress --watch & babel-node --stage 0 ./bin/www",
