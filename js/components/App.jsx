@@ -4,11 +4,13 @@ import MobileApp from './MobileApp'
 
 export default class App extends Component {
 
+
+
 	render() {
 
 		var width = $(document).width()
 
-		if(width > 1000){
+		if(width > 99999){
 
 			return(
 				<DesktopApp />

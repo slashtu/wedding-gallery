@@ -9,9 +9,10 @@ export default class MobileApp extends Component {
         // https://code.flickr.net/2014/04/30/flickr-api-going-ssl-only-on-june-27th-2014/
         url: 'https://api.flickr.com/services/rest/',
         data: {
+            user_id: '142478112@N07',
             format: 'json',
-            method: 'flickr.interestingness.getList',
-            api_key: '7617adae70159d09ba78cfec73c13be3' // jshint ignore:line
+            method: 'flickr.people.getPhotos',
+            api_key: '7aa3ef388299f4637883fc3f2398b76a' // jshint ignore:line
         },
         dataType: 'jsonp',
         jsonp: 'jsoncallback'
@@ -24,7 +25,7 @@ export default class MobileApp extends Component {
             baseUrl = 'https://farm' + photo.farm + '.static.flickr.com/' +
                 photo.server + '/' + photo.id + '_' + photo.secret;
             $('<a/>')
-                .append($('<img>').prop('src', baseUrl + '_s.jpg').prop('class', 'small'))
+                .append($('<img>').prop('src', baseUrl + '_n.jpg').prop('class', 'small'))
                 .prop('href', baseUrl + '_b.jpg')
                 .prop('title', photo.title)
                 .attr('data-gallery', '')
