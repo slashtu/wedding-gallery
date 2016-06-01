@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "webpack -d --progress --watch & babel-node --stage 0 ./bin/www",
+    "start": "webpack -d --progress --watch & node ./bin/www",
     "build": "webpack -d --progress",
-    "production": "node bin/www"
+    "production": "webpack -d --progress --watch & NODE_ENV=production node ./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
