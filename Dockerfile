@@ -15,4 +15,4 @@ ADD . /usr/src/app
 
 EXPOSE 7777
 
-CMD [ "npm", "start" ]
+CMD [ "npm", "run", "production" ]
