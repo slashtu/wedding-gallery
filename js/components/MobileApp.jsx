@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react'
+import secret from '../../secret.js' 
 
 export default class MobileApp extends Component {
 
@@ -9,12 +10,12 @@ export default class MobileApp extends Component {
         // https://code.flickr.net/2014/04/30/flickr-api-going-ssl-only-on-june-27th-2014/
         url: 'https://api.flickr.com/services/rest/',
         data: {
-            user_id: '142478112@N07',
+            user_id: secret.flickr.user_id,
             photoset_id: '72157667930809982', 
             format: 'json',
             // method: 'flickr.people.getPhotos',
             method: 'flickr.photosets.getPhotos',
-            api_key: '7aa3ef388299f4637883fc3f2398b76a' // jshint ignore:line
+            api_key: secret.flickr.api_key // jshint ignore:line
         },
         dataType: 'jsonp',
         jsonp: 'jsoncallback'

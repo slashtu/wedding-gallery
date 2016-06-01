@@ -3,6 +3,7 @@
 /**
  * Module dependencies.
  */
+global.__base = require( 'path' ).resolve( __dirname , '..' ) + '/';
 
 var app = require('../app');
 var debug = require('debug')('wedding:server');
