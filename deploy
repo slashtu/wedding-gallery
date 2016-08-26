@@ -1,0 +1,4 @@
+sudo docker stop wedding-gallery
+sudo docker rm wedding-gallery
+sudo docker build -t slash/wedding-gallery .
+sudo docker run -d --restart=always --name wedding-gallery -p 7777:7777 slash/wedding-gallery
