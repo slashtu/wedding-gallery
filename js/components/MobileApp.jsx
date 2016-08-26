@@ -3,6 +3,7 @@ import async from 'async'
 
 const sets = 
 [ 
+  '72157669811278254', // wedding processing
   '72157671538788591', // wedding party
   '72157667930809982', // wedding
   '72157669345758536', // Rock
@@ -62,6 +63,7 @@ export default class MobileApp extends Component {
 
 	componentDidMount(){
     async.series([
+      this.renderPhotosBySetId,
       this.renderPhotosBySetId,
       this.renderPhotosBySetId,
       this.renderPhotosBySetId,
