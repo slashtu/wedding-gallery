@@ -1,5 +1,5 @@
 ## wedding-gallery
-A simple RWD gallery [http://slash.tw/apps/wedding-gallery](http://slash.tw/apps/wedding-gallery)
+A simple RWD gallery [http://slashtu.github.io/apps/wedding-gallery/](http://slashtu.github.io/apps/wedding-gallery/)
 
 ## built image
 ```docker build -t slash/wedding-gallery .```
